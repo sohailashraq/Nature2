@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+// Homework 4 has been done.
+    let sonitaMass = 74;
+    let sonitaHight = 1.69;
+    let spidaMass = 92;
+    let spidaHight = 1.95;
+    let sonitaBMI = sonitaMass / sonitaHight **2;
+    let spidaBMI = spidaMass / spidaHight * spidaHight;
+    console.log(sonitaBMI,       spidaBMI);
+
+    if (sonitaBMI > spidaBMI){
+      console.log(`sonita has grater BMI than spida....${sonitaBMI}`)
+    }else if (spidaBMI > sonitaBMI){
+      console.log(`spida has grater BMI than sonita....${spidaBMI}`)
+    }
+    else{
+      console.log(`sonita and spida have the same BMI`)
+    }
+
+
+// Homework 5 find the average score.
+
+let fahimAverageScore =( 97 + 112  + 101 )/3;
+let zobairAverageScore = (109 +95+ 123)/3;  
+
+console.log(fahimAverageScore,zobairAverageScore);
+
+if(fahimAverageScore > zobairAverageScore && fahimAverageScore >= 100){
+  console.log(`fahim with the average score ${fahimAverageScore} wins the 🏆`);
+} else if (zobairAverageScore > fahimAverageScore && zobairAverageScore >=100){
+  console.log(`zobair with the average score ${zobairAverageScore} wins the 🏆`);
+}
+else if (fahimAverageScore === zobairAverageScore && zobairAverageScore >=100 && fahimAverageScore>=100){
+  console.log("both are equal");
+}
+else {
+  console.log("No one wins the trophy");
+}
+
+// Homework 6 calculate the tips
+const bill = 430;
+const tip = (bill >= 50 && bill <=300) ? bill * 0.15 : bill * 0.2;
+console.log(`the bill was ${bill} and the tip was ${tip} and the total was ${bill+tip}`)
+
+// Homework 7 was done. To bulit functiions about my country.
+
+// Homework 8 To use function declreation...return percentage.
+
+function preOfuniverse1 (population){
+  const percentageOFcountry = (population / 7900 ) * 100;
+  console.log(percentageOFcountry.toFixed(2));
+  return percentageOFcountry;
+}
+let g = preOfuniverse1(40.1);
+let j = preOfuniverse1(90);
+let l = preOfuniverse1(85);
+console.log(g.toFixed(2),j.toFixed(4),l.toFixed(3));
+
+const preOfuniverse2 = function(population){
+  const percentageOFcountry = (population / 7900 ) * 100;
+  console.log(percentageOFcountry.toFixed(2));
+  return percentageOFcountry;
+};
+
+console.log(preOfuniverse2(40.1))
+
+const preOfuniverse3 = (population) =>  {
+  return (population /7900) *100;
+}
+
+const kk = preOfuniverse3(30);
+console.log(kk.toFixed(2))
+
+
+  </script>
+</body>
+</html>
